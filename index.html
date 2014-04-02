@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Canvas Example</title>
+    <script>
+        function draw(){
+            var canvas=document.getElementById("myCanvas");
+            var ctx=canvas.getContext("2d");
+            var height = myCanvas.height;
+            var width = myCanvas.width;
+
+            ctx.fillStyle="#FF0000";
+            ctx.fillRect(0,0,width,height);
+        }
+    </script>
+</head>
+<body onload="draw()">
+    <canvas id="myCanvas" width="600" height="400" >
+        Your browser does not support the HTML5 canvas tag.
+    </canvas>
+</body>
+</html>
